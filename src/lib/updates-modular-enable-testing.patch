@@ -1,0 +1,13 @@
+--- /etc/yum.repos.d/fedora-updates-modular.repo        2020-01-16 14:32:20.460277756 +0000
++++ /etc/yum.repos.d/fedora-updates-modular.repo        2020-01-16 14:36:43.988277756 +0000
+@@ -1,8 +1,8 @@
+ [updates-modular]
+ name=Fedora Modular $releasever - $basearch - Updates
+ failovermethod=priority
+-#baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/$releasever/Modular/$basearch/
+-metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-f$releasever&arch=$basearch
++baseurl=http://download.fedoraproject.org/pub/fedora/linux/updates/testing/$releasever/Modular/$basearch/
++#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-modular-f$releasever&arch=$basearch
+ enabled=1
+ repo_gpgcheck=0
+ type=rpm

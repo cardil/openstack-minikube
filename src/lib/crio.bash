@@ -4,6 +4,7 @@ set -Eeuo pipefail
 
 function ensure.container.installed {
   local patchfile
+  echo '+ensure.container.installed'
   
   # FIXME: Remove this after https://bugzilla.redhat.com/show_bug.cgi?id=1754170 is fixed
   if ! grep -q 'updates/testing' /etc/yum.repos.d/fedora-updates-modular.repo; then

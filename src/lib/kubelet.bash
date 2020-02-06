@@ -3,6 +3,7 @@
 set -Eeuo pipefail
 
 function ensure.kubelet.installed {
+  echo '+ensure.kubelet.installed'
   if systemctl status kubelet.service > /dev/null; then
     return 0
   fi

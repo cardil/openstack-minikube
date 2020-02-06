@@ -12,7 +12,7 @@ def env(name_s, defaults = nil)
   end
 end
 
-kubeVersion = env(:KUBE_VERSION, '1.17.0')
+kubeVersion = env(:KUBE_VERSION, '1.17.2')
 
 Vagrant.configure('2') do |config|
 
